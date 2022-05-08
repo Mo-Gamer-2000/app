@@ -1,0 +1,53 @@
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/moeez/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13.jar;C:/Users/moeez/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13.jar;C:/Users/moeez/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13.jar'
+--module-path
+'C:/Users/moeez/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13-win.jar;C:/Users/moeez/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13-win.jar;C:/Users/moeez/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13-win.jar;C:/Users/moeez/OneDrive/Documents/NetBeansProjects/app/target/classes'
+--patch-module
+com.mycompany.app='C:/Users/moeez/OneDrive/Documents/NetBeansProjects/app/src/main/java'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+--module-source-path
+'C:/Users/moeez/OneDrive/Documents/NetBeansProjects/app/target/site/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/moeez/OneDrive/Documents/NetBeansProjects/app/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'MoeezVet 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/moeez/OneDrive/Documents/NetBeansProjects/app/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'MoeezVet 1.0-SNAPSHOT API'
+com.mycompany.app
+'C:/Users/moeez/OneDrive/Documents/NetBeansProjects/app/src/main/java/module-info.java'
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\allclasses-index.html = 1652025469316
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\allpackages-index.html = 1652025469320
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\copy.svg = 1652025469366
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\element-list = 1652025469191
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\help-doc.html = 1652025469358
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\index-all.html = 1652025469350
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\index.html = 1652025469352
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\jquery-ui.overrides.css = 1652025469405
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\member-search-index.js = 1652025469326
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\module-search-index.js = 1652025469321
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\overview-tree.html = 1652025469300
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\package-search-index.js = 1652025469323
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\script.js = 1652025469364
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\search.js = 1652025469369
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\serialized-form.html = 1652025469252
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\stylesheet.css = 1652025469361
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\tag-search-index.js = 1652025469327
+C:\Users\moeez\OneDrive\Documents\NetBeansProjects\app\target\site\apidocs\type-search-index.js = 1652025469324
