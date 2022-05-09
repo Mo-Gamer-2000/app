@@ -83,15 +83,16 @@ public class AnimalStore implements Serializable {
             output += "\n" + "Gender: " + animalsToTreat.get(counter).gender;
             output += "\n" + "Colour: " + animalsToTreat.get(counter).colour;
             output += "\n" + "Illnesses: " + animalsToTreat.get(counter).illnesses;
+            output += "\n" + "";
             
             //Display Owner Information
             output += "\n" + "Owner Information: ";
+            
             output += "\n" + "Name: " + animalsToTreat.get(counter).ownerName;
             output += "\n" + "Surname: " + animalsToTreat.get(counter).ownerSurname;
             output += "\n" + "Address: " + animalsToTreat.get(counter).ownerAddress;
             output += "\n" + "";
-            
-            output += "\n" + "";
+          
         }
         return output;
     }

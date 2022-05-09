@@ -62,35 +62,35 @@ public class VeterinarySurgeryApp extends Application {
 
     // visual components - Animal / Pet Information
     // Name Section
-    private final Label animalNameLabel = new Label("Name:");
+    private final Label animalNameLabel = new Label("Animal / Pet's Name:");
     private final TextField animalNameField = new TextField();
 
     // Age Section
-    private final Label ageLabel = new Label("Age:");
+    private final Label ageLabel = new Label("Animal / Pet's Age:");
     private final TextField ageField = new TextField();
 
     // Weight Section
-    private final Label weightLabel = new Label("Weight(Kg):");
+    private final Label weightLabel = new Label("Animal / Pet's Weight(Kg):");
     private final TextField weightField = new TextField();
 
     // Breed Section
-    private final Label breedLabel = new Label("Breed:");
+    private final Label breedLabel = new Label("Animal / Pet's Breed:");
     private final TextField breedField = new TextField();
 
     // Type Section
-    private final Label typeLabel = new Label("Type:");
+    private final Label typeLabel = new Label("Animal / Pet's Type:");
     private final TextField typeField = new TextField();
 
     // Gender Section
-    private final Label genderLabel = new Label("Gender:");
+    private final Label genderLabel = new Label("Animal / Pet's Gender:");
     private final TextField genderField = new TextField();
 
     // Colour Section
-    private final Label colourLabel = new Label("Colour:");
+    private final Label colourLabel = new Label("Animal / Pet's Colour:");
     private final TextField colourField = new TextField();
 
     // Illnesses Section
-    private final Label illnessesLabel = new Label("Illnesses:");
+    private final Label illnessesLabel = new Label("Animal / Pet's Illnesses:");
     private final TextField illnessesField = new TextField();
 
    
@@ -110,19 +110,20 @@ public class VeterinarySurgeryApp extends Application {
             myAnimalList = new AnimalStore(20);
         }
         //create horizontal boxes for the pet and owner details
-        HBox animalDetails = new HBox(10);
+        HBox animalDetails = new HBox(10);  
+        HBox animalDetails2 = new HBox(10);
         HBox ownerDetails = new HBox(10);
 
         // add all components to HBoxes
-        animalDetails.getChildren().addAll(animalNameLabel, animalNameField, ageLabel, ageField, weightLabel, weightField, breedLabel, 
-                breedField, typeLabel, typeField, genderLabel, genderField, colourLabel, colourField, illnessesLabel, illnessesField);
+        animalDetails.getChildren().addAll(animalNameLabel, animalNameField, ageLabel, ageField, weightLabel, weightField, breedLabel, breedField);
+        animalDetails2.getChildren().addAll(typeLabel, typeField, genderLabel, genderField, colourLabel, colourField, illnessesLabel, illnessesField);
         ownerDetails.getChildren().addAll(ownerNameLabel, ownerNameField, ownerSurnameLabel, ownerSurnameField, ownerAddressLabel, ownerAddressField);
 
         // create VBox
         VBox root = new VBox(10);
 
         // add all components to VBox
-        root.getChildren().addAll(headingLabel, sectSeparator, animalLabel, animalDetails, sectSeparator2, sectSeparator1,
+        root.getChildren().addAll(headingLabel, sectSeparator, animalLabel, animalDetails, animalDetails2, sectSeparator2, sectSeparator1,
                 ownerLabel, ownerDetails, sectSeparator3, displayAnimals, sectSeparator4, addButton, storeButton, clearButton);
 
         // create the scene
@@ -137,6 +138,7 @@ public class VeterinarySurgeryApp extends Application {
 
         // set alignment of HBoxes
         animalDetails.setAlignment(Pos.CENTER);
+        animalDetails2.setAlignment(Pos.CENTER);
         ownerDetails.setAlignment(Pos.CENTER);
         addButton.setAlignment(Pos.CENTER);
         storeButton.setAlignment(Pos.CENTER);
@@ -194,7 +196,8 @@ public class VeterinarySurgeryApp extends Application {
         {
 
             // Constructor to create a new animal
-            Animal myNewAnimal = new Animal(ownerName, ownerSurname, ownerAddress, type, breed, animalName, age, weight, gender, colour, illnesses);
+            //type, breed, name, age, weight, ownerName, ownerSurname, ownerAddress, gender, colour, illnesses
+            Animal myNewAnimal = new Animal(type, breed, animalName, age, weight, ownerName, ownerSurname, ownerAddress, gender, colour, illnesses);
             storeMessage = myAnimalList.addAnimal(myNewAnimal);
             //clear the fields
             ownerNameField.setText("");
